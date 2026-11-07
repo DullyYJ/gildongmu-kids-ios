@@ -39,7 +39,10 @@ struct KidsBlocksView: View {
     private func s(_ b: [String: Any], _ k: String) -> String { (b[k] as? String) ?? "" }
     private func on(_ b: [String: Any], _ k: String = "on") -> Bool { (b[k] as? String) == "1" || (b[k] as? NSNumber)?.boolValue == true }
 
-    @ViewBuilder private func block(_ b: [String: Any], skipInput: Bool) -> some View {
+    /// box 가 자기 안의 블록을 다시 그리므로(재귀) 돌려주는 모양을 AnyView 로 고정한다.
+    private func block(_ b: [String: Any], skipInput: Bool) -> AnyView { AnyView(content(b, skipInput: skipInput)) }
+
+    @ViewBuilder private func content(_ b: [String: Any], skipInput: Bool) -> some View {
         switch s(b, "t") {
         case "head":
             Text(s(b, "text")).font(Typo.font(17, bold: true)).foregroundColor(pal.color("text")).frame(maxWidth: .infinity, alignment: .leading)
