@@ -161,6 +161,9 @@ struct KidsHomeTab: View {
                 }
                 scene(h: 220, r: 14)
                 if sceneJSON.isEmpty && !sceneErr.isEmpty { Text("장면을 못 받았어요 · \(sceneErr)").font(Typo.font(11)).foregroundColor(pal.color("sub")).frame(maxWidth: .infinity, alignment: .leading) }
+                if CommandLine.arguments.contains("-kidsDemo") {      // CI 화면 확인용 진단 줄(시험 실행에서만 보인다)
+                    Text("진단 · 준비 \(d.isReady ? "예" : "아니오") · 받은 글자 \(sceneJSON.count) · \(sceneJSON.prefix(60))").font(.system(size: 9)).foregroundColor(.gray).frame(maxWidth: .infinity, alignment: .leading)
+                }
                 Text("길동무 친구들이 오늘도 돌아다니고 있어요. 3초 꾹 누르면 친구들이 인사해요.").font(Typo.font(11)).foregroundColor(pal.color("sub")).frame(maxWidth: .infinity, alignment: .leading)
             }.padding(14)
         }
