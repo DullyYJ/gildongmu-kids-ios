@@ -1,0 +1,300 @@
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex/CoreImage-725O0273TZ33565F36RQI7QKG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex/SwiftUICore-2ZH7MA571Z6B2XCQYRIL2NC23.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex/UIKit-A297J1CXPNGTHBFS9RKP4Y0WN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex/SwiftUI-BE662208MHZHGOSISJOFTQ491.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ GildongmuKids (in target 'GildongmuKids' from project 'GildongmuKids')
+
+EmitSwiftModule normal arm64 (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 Compiling\ NodeView3.swift,\ NodeView4.swift,\ NodeView5.swift,\ NodeView6.swift,\ NodeView7.swift,\ NodeView8.swift,\ Palette.swift,\ RemoteScreen.swift,\ RunnerCore.swift,\ SVGPath.swift,\ SceneActs.swift,\ SceneActs2.swift,\ SceneActs3.swift,\ SceneArt.swift,\ SceneCore.swift,\ SceneCoreDraw.swift,\ SceneCoreRun.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView3.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView4.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView5.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView6.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView7.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView8.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Palette.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/RemoteScreen.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/RunnerCore.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/SVGPath.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneActs.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneActs2.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneActs3.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneArt.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCore.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCoreDraw.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCoreRun.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView3.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView4.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView5.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView6.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView7.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView8.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Palette.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/RemoteScreen.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/RunnerCore.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/SVGPath.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneActs.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneActs2.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneActs3.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneArt.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCore.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCoreDraw.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCoreRun.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 Compiling\ Chars.swift,\ DevExplorer.swift,\ Host.swift,\ KidsApp.swift,\ KidsBlocks.swift,\ KidsColor.swift,\ KidsLocation.swift,\ KidsRoot.swift,\ KidsServer.swift,\ KidsStore.swift,\ LocationStore.swift,\ MsgNode.swift,\ Net.swift,\ Node.swift,\ NodeDemo.swift,\ NodeView.swift,\ NodeView2.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/Chars.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/DevExplorer.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Host.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/App/KidsApp.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsBlocks.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsColor.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsLocation.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsRoot.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsServer.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsStore.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/LocationStore.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/MsgNode.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Net.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Node.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeDemo.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView2.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/Chars.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/DevExplorer.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Host.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/App/KidsApp.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsBlocks.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsColor.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsLocation.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsRoot.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsServer.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Sources/Kids/KidsStore.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/LocationStore.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/MsgNode.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Net.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Node.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeDemo.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/NodeView2.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 Compiling\ SceneCv.swift,\ SceneDriver.swift,\ SceneFeed.swift,\ SceneFx.swift,\ SceneHaptics.swift,\ SceneHello.swift,\ SceneModel.swift,\ SceneOpen.swift,\ ScenePlaces.swift,\ ScenePlatform.swift,\ SceneTrain.swift,\ SceneUtil.swift,\ SceneView.swift,\ TileMap.swift,\ Typo.swift,\ UnknownKinds.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCv.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneDriver.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneFeed.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneFx.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneHaptics.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneHello.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneModel.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneOpen.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/ScenePlaces.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/ScenePlatform.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneTrain.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneUtil.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneView.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/TileMap.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Typo.swift /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/UnknownKinds.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneCv.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneDriver.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneFeed.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneFx.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneHaptics.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneHello.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneModel.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneOpen.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/ScenePlaces.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/ScenePlatform.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneTrain.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneUtil.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Scene/SceneView.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/UI/TileMap.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/Typo.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftCompile normal arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Vendor/Sources/Core/UnknownKinds.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for GildongmuKids (in target 'GildongmuKids' from project 'GildongmuKids')
+
+SwiftDriver\ Compilation\ Requirements GildongmuKids normal arm64 com.apple.xcode.tools.swift.compiler (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GildongmuKids -Onone @/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios16.2-simulator -g -module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-generated-files.hmap -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-own-target-headers.hmap -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-project-headers.hmap -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-Swift.h -working-directory /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling Chars.swift, DevExplorer.swift, Host.swift, KidsApp.swift, KidsBlocks.swift, KidsColor.swift, KidsLocation.swift, KidsRoot.swift, KidsServer.swift, KidsStore.swift, LocationStore.swift, MsgNode.swift, Net.swift, Node.swift, NodeDemo.swift, NodeView.swift, NodeView2.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+
+SwiftMergeGeneratedHeaders /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources/GildongmuKids-Swift.h /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-Swift.h (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-Swift.h -o /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources/GildongmuKids-Swift.h
+
+Copy /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftmodule (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftmodule /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftdoc (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftdoc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.abi.json (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.abi.json /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftsourceinfo (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftsourceinfo /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling SceneCv.swift, SceneDriver.swift, SceneFeed.swift, SceneFx.swift, SceneHaptics.swift, SceneHello.swift, SceneModel.swift, SceneOpen.swift, ScenePlaces.swift, ScenePlatform.swift, SceneTrain.swift, SceneUtil.swift, SceneView.swift, TileMap.swift, Typo.swift, UnknownKinds.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+
+SwiftDriverJobDiscovery normal arm64 Compiling NodeView3.swift, NodeView4.swift, NodeView5.swift, NodeView6.swift, NodeView7.swift, NodeView8.swift, Palette.swift, RemoteScreen.swift, RunnerCore.swift, SVGPath.swift, SceneActs.swift, SceneActs2.swift, SceneActs3.swift, SceneArt.swift, SceneCore.swift, SceneCoreDraw.swift, SceneCoreRun.swift (in target 'GildongmuKids' from project 'GildongmuKids')
+
+SwiftDriver\ Compilation GildongmuKids normal arm64 com.apple.xcode.tools.swift.compiler (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GildongmuKids -Onone @/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios16.2-simulator -g -module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-generated-files.hmap -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-own-target-headers.hmap -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-project-headers.hmap -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-Swift.h -working-directory /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids.debug.dylib normal (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.2-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -filelist /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.LinkFileList -install_name @rpath/GildongmuKids.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.swiftmodule @/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-ExecutorLinkFileList-normal-arm64.txt (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    construct-stub-executor-link-file-list /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids.debug.dylib /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'GildongmuKids' from project 'GildongmuKids')
+
+Ld /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids normal (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.2-simulator -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids-ExecutorLinkFileList-normal-arm64.txt /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids.debug.dylib -o /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids
+
+CopySwiftLibs /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids.debug.dylib --scan-folder /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/Frameworks --scan-folder /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/PlugIns --scan-folder /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/SystemExtensions --scan-folder /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/Extensions --platform iphonesimulator --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.eOZ7AW/Metal.xctoolchain --toolchain /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.eOZ7AW/Metal.xctoolchain --module-name GildongmuKids --sdk-root /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 16.2 --bundle-identifier com.dullyyj.kids.ios --output /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app --target-triple arm64-apple-ios16.2-simulator --binary-file /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/GildongmuKids --dependency-file /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids_dependency_info.dat --stringsdata-file /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.SwiftFileList --metadata-file-list /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/Objects-normal/arm64/GildongmuKids.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-11-07 07:31:12.741 appintentsmetadataprocessor[5814:20965] Starting appintentsmetadataprocessor export
+2026-11-07 07:31:12.748 appintentsmetadataprocessor[5814:20965] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/Info.plist --temp-dir-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/ssu --bundle-id com.dullyyj.kids.ios --product-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app --extracted-metadata-path /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/Metadata.appintents --metadata-file-list /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Intermediates.noindex/GildongmuKids.build/Debug-iphonesimulator/GildongmuKids.build/GildongmuKids.DependencyMetadataFileList --source-file /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app/Info.plist --archive-ssu-assets
+2026-11-07 07:31:12.776 appintentsnltrainingprocessor[5815:20967] Parsing options for appintentsnltrainingprocessor
+2026-11-07 07:31:12.776 appintentsnltrainingprocessor[5815:20967] Starting AppIntents SSU YAML Generation
+2026-11-07 07:31:12.780 appintentsnltrainingprocessor[5815:20967] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-RegisterExecutionPolicyException /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app
+
+Validate /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    builtin-validationUtility /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app (in target 'GildongmuKids' from project 'GildongmuKids')
+    cd /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios
+    /usr/bin/touch -c /Users/runner/work/gildongmu-kids-ios/gildongmu-kids-ios/Build/Build/Products/Debug-iphonesimulator/GildongmuKids.app
+
+** BUILD SUCCEEDED **
+
