@@ -1,0 +1,94 @@
+name: iOS build (simulator)
+
+# 맥이 없어도 키즈 iOS 앱을 시험한다: 클라우드 맥에서 (부모 앱 공유 코드 받기) → XcodeGen → 빌드 → 시뮬레이터 화면 캡처.
+# 결과(로그 · 스크린샷)는 ios-ci-out 브랜치에 올린다.
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 푸시가 연달아 오면 앞선 빌드는 취소한다(먼저 끝난 오래된 빌드가 결과를 덮어쓰지 않게).
+concurrency:
+  group: kids-ios-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: DullyYJ/subway-app-ios
+          path: parent
+      - name: 글꼴 만들기 (부모 앱과 같은 Noto Sans KR)
+        run: |
+          pip3 install --quiet --break-system-packages fonttools || pip3 install --quiet fonttools
+          python3 parent/scripts/make_fonts.py
+      - name: 공유 코드 가져오기 · XcodeGen 프로젝트 생성
+        run: |
+          bash tools/vendor.sh parent
+          mkdir -p Build
+          brew install xcodegen
+          xcodegen
+      - name: 시뮬레이터 고르기
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json,sys,re
+          d=json.load(sys.stdin)['devices']
+          c=[x for k,v in d.items() if 'iOS' in k for x in v if x['name'].startswith('iPhone')]
+          di=[x for x in c if re.match(r'iPhone (1[4-9]|2\d)( Pro)?( Max)?$', x['name']) and x['name'] not in ('iPhone 14','iPhone 14 Plus')]
+          pro=[x for x in di if 'Pro' in x['name'] and 'Max' not in x['name']]
+          pick=(pro or di or c)
+          print(pick[-1]['udid'] if pick else '')")
+          echo "UDID=$UDID" >> $GITHUB_ENV
+      - name: 빌드
+        run: |
+          set -o pipefail
+          xcodebuild build -project GildongmuKids.xcodeproj -scheme GildongmuKids \
+            -destination "id=$UDID" -derivedDataPath build CODE_SIGNING_ALLOWED=NO 2>&1 | tee build.log | tail -60
+      - name: 실행 화면 캡처
+        if: always()
+        run: |
+          APP=$(find build/Build/Products -name 'GildongmuKids.app' -maxdepth 3 | head -1)
+          B=com.dullyyj.kids.ios
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl install "$UDID" "$APP"
+          xcrun simctl privacy "$UDID" grant location $B || true
+          xcrun simctl location "$UDID" set 37.5547,126.9707 || true
+          # 동의 창(처음 켠 모습)
+          xcrun simctl launch "$UDID" $B
+          sleep 8
+          xcrun simctl io "$UDID" screenshot screenshot-consent.png
+          xcrun simctl terminate "$UDID" $B || true
+          for T in home chat quest settings map; do
+            xcrun simctl terminate "$UDID" $B || true
+            xcrun simctl launch "$UDID" $B -kidsDemo 1 -tab $T
+            sleep 16
+            xcrun simctl io "$UDID" screenshot screenshot-$T.png
+          done
+          xcrun simctl ui "$UDID" appearance dark
+          xcrun simctl terminate "$UDID" $B || true
+          xcrun simctl launch "$UDID" $B -kidsDemo 1 -tab home
+          sleep 16
+          xcrun simctl io "$UDID" screenshot screenshot-home-dark.png
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-result
+          path: |
+            build.log
+            screenshot-*.png
+      - name: 결과를 ios-ci-out 브랜치에 올리기
+        if: always()
+        run: |
+          mkdir -p /tmp/out && cp screenshot-*.png /tmp/out/ 2>/dev/null || true
+          tail -300 build.log > /tmp/out/build-tail.log || true
+          cd /tmp/out && git init -q && git checkout -q -b ios-ci-out
+          git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -qm "ios CI 결과 ${{ github.sha }}"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" ios-ci-out

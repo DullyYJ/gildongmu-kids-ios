@@ -1,0 +1,22 @@
+name: Kids typecheck
+# 키즈 앱 문법 검사(빠르게, 약 1분). 부모 앱의 공유 코드를 받아 같이 검사한다.
+on:
+  push:
+    paths: ['Sources/**', 'tools/**', '.github/workflows/typecheck.yml']
+  workflow_dispatch:
+jobs:
+  typecheck:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: DullyYJ/subway-app-ios
+          path: parent
+      - name: 공유 코드 가져오기
+        run: bash tools/vendor.sh parent
+      - name: 문법 검사
+        run: |
+          SDK=$(xcrun --sdk iphonesimulator --show-sdk-path)
+          swiftc -typecheck -sdk "$SDK" -target arm64-apple-ios16.2-simulator Sources/*/*.swift Vendor/Sources/*/*.swift 2>&1 | tee typecheck.log
+          test ${PIPESTATUS[0]} -eq 0
