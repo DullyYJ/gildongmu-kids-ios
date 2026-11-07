@@ -1,0 +1,46 @@
+# XcodeGen 설정 — CI(.github/workflows/ios.yml)가 부모 앱 저장소(DullyYJ/subway-app-ios)를 읽기 전용으로 받아 tools/vendor.sh 로 Vendor/ 에 복사한 뒤 `xcodegen` 을 돌린다.
+# 화면 그리개(Core · UI)와 장면 엔진(Scene)·캐릭터 시트는 부모 앱과 같은 것을 쓴다(안드로이드 키즈와 같은 방식).
+name: GildongmuKids
+options:
+  bundleIdPrefix: com.dullyyj
+  deploymentTarget:
+    iOS: "16.2"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""
+targets:
+  GildongmuKids:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Vendor/Sources
+      - path: Vendor/Fonts
+        optional: true
+      - path: Vendor/chars3d
+        type: folder
+        buildPhase: resources
+      - path: Vendor/open.json
+        buildPhase: resources
+    info:
+      path: Build/Info.plist
+      properties:
+        CFBundleDisplayName: 길동무 키즈
+        UILaunchScreen: {}
+        UIAppFonts: [NotoSansKR-Regular.ttf, NotoSansKR-Bold.ttf]
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        CFBundleURLTypes:
+          - CFBundleURLName: com.dullyyj.kids.pair
+            CFBundleURLSchemes: [gildongmu-kids]
+        NSLocationWhenInUseUsageDescription: 부모님께 내 위치를 알리고, 내 주변 날씨를 보여 주려고 위치를 사용해요.
+        NSLocationAlwaysAndWhenInUseUsageDescription: 앱을 닫거나 화면을 꺼도 부모님께 내 위치를 알리고 집·학교 도착 알림을 보내려고 위치를 계속 사용해요.
+        UIBackgroundModes: [location]
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dullyyj.kids.ios
+        TARGETED_DEVICE_FAMILY: "1"
