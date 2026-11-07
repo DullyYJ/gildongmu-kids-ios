@@ -96,7 +96,8 @@ struct KidsMapTab: View {
 struct KidsConsent: View {
     let pal: Palette
     let done: () -> Void
-    @State private var parent = false, child = false
+    @State private var parent = false
+    @State private var child = false
     static func report() async { _ = try? await KidsServer.call("POST", "/c/consent", ["v": 2]) }
     private let cards: [(String, String)] = [
         ("알리는 것", "내 휴대폰의 위치와 알린 시각, 배터리 잔량이에요. 평소에는 몇 분마다 알리고, 부모님이 지도를 보는 동안에는 몇 초마다 알려요. 이때는 맨 위 줄과 알림에 '부모님이 지금 내 위치를 보고 있어요'라고 보여요."),
