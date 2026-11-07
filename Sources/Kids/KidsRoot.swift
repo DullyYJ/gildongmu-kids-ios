@@ -32,6 +32,7 @@ struct KidsRoot: View {
                     Text(n).font(Typo.font(12)).foregroundColor(.white).padding(10).background(Color.black.opacity(0.8)).cornerRadius(10).padding(.bottom, 12).transition(.opacity)
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)        // 내용 칸이 화면을 다 채워야 탭바가 맨 아래에 붙는다
             tabBar
         }
         .background((pal.color("bg") ?? Color(.systemBackground)).ignoresSafeArea())
@@ -72,7 +73,10 @@ struct KidsBlocksTab: View {
                     Task { await store.act(act, arg: arg) }
                 }
             } else {
-                ProgressView()
+                VStack(spacing: 8) {
+                    ProgressView()
+                    if store.offline { Text("서버에 닿지 못했어요 · \(store.lastErr)").font(Typo.font(11)).foregroundColor(pal.color("sub")).multilineTextAlignment(.center).padding(.horizontal, 24) }
+                }
             }
             if store.offline && scr != nil { VStack { Text("서버에 닿지 못해 마지막 화면이에요").font(Typo.font(11)).foregroundColor(.white).padding(6).background(Color.black.opacity(0.7)).cornerRadius(8); Spacer() } .padding(.top, 6) }
         }

@@ -14,6 +14,8 @@ final class KidsStore: ObservableObject {
     @Published private(set) var cheers: [String] = []
     @Published var notice: String? = nil
     @Published private(set) var offline = false
+    /// 마지막으로 서버에 닿지 못한 까닭(짧은 글) — 로딩이 오래 걸릴 때 화면에 작게 보인다.
+    @Published private(set) var lastErr = ""
     /// 퀘스트의 칸(c = 자녀 미션, p = 부모님 미션) — 서버가 두 칸을 모두 보내 주니 고르는 건 화면에서만.
     @Published var qt = "c"
 
@@ -44,6 +46,7 @@ final class KidsStore: ObservableObject {
             } catch {
                 if Task.isCancelled { return }
                 offline = true
+                lastErr = (error as? LocalizedError)?.errorDescription ?? String(describing: error)
                 try? await Task.sleep(nanoseconds: 3_000_000_000)
             }
         }
