@@ -27,7 +27,7 @@ targets:
       - path: Vendor/open.json
         buildPhase: resources
     info:
-      path: Build/Info.plist
+      path: Config/Info.plist
       properties:
         CFBundleDisplayName: 길동무 키즈
         UILaunchScreen: {}
