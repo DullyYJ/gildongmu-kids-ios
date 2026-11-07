@@ -26,12 +26,14 @@ enum KidsServer {
     private static let regLock = NSLock()
     private static var registered = UserDefaults.standard.bool(forKey: "kids.reg")
 
+    private static func isReg() -> Bool { regLock.lock(); defer { regLock.unlock() }; return registered }
+    private static func setReg(_ v: Bool) { regLock.lock(); registered = v; regLock.unlock(); UserDefaults.standard.set(v, forKey: "kids.reg") }
+
     static func ensureReg() async throws {
-        regLock.lock(); let done = registered; regLock.unlock()
-        if done { return }
+        if isReg() { return }
         let body = try JSONSerialization.data(withJSONObject: ["id": id, "sec": sec, "role": "c"])
         let (st, _) = try await send("POST", "/reg", body: body, auth: false)
-        if st == 200 { regLock.lock(); registered = true; regLock.unlock(); UserDefaults.standard.set(true, forKey: "kids.reg") }
+        if st == 200 { setReg(true) }
         else { throw Net.Failure(msg: "등록하지 못했어요 (\(st))") }
     }
 
@@ -50,7 +52,7 @@ enum KidsServer {
         try await ensureReg()
         let data = body.flatMap { try? JSONSerialization.data(withJSONObject: $0) }
         var (st, d) = try await send(method, path, body: data, timeout: timeout)
-        if st == 401 { UserDefaults.standard.set(false, forKey: "kids.reg"); regLock.lock(); registered = false; regLock.unlock(); try await ensureReg(); (st, d) = try await send(method, path, body: data, timeout: timeout) }
+        if st == 401 { setReg(false); try await ensureReg(); (st, d) = try await send(method, path, body: data, timeout: timeout) }
         guard let o = (try? JSONSerialization.jsonObject(with: d)) as? [String: Any] else { throw Net.Failure(msg: "서버 \(st)") }
         if st >= 400 { throw Net.Failure(msg: (o["err"] as? String) ?? (o["msg"] as? String) ?? "서버 \(st)") }
         return o
