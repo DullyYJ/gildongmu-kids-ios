@@ -14,14 +14,26 @@ enum KidsServer {
         guard SecItemCopyMatching(q as CFDictionary, &out) == errSecSuccess, let d = out as? Data else { return nil }
         return String(data: d, encoding: .utf8)
     }
-    private static func kcSet(_ k: String, _ v: String) {
+    private static func kcSet(_ k: String, _ v: String) -> Bool {
         let base: [String: Any] = [kSecClass as String: kSecClassGenericPassword, kSecAttrService as String: "com.dullyyj.kids", kSecAttrAccount as String: k]
         SecItemDelete(base as CFDictionary)
         var a = base; a[kSecValueData as String] = Data(v.utf8); a[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlock
-        SecItemAdd(a as CFDictionary, nil)
+        return SecItemAdd(a as CFDictionary, nil) == errSecSuccess
     }
-    static var id: String { if let v = kcGet("id") { return v }; let v = "k" + rand(23); kcSet("id", v); return v }
-    static var sec: String { if let v = kcGet("sec") { return v }; let v = rand(40); kcSet("sec", v); return v }
+    /// 아이디·비밀은 앱을 켠 뒤 한 번만 정한다(요청마다 새로 만들면 등록한 값과 어긋난다).
+    /// 열쇠고리에 못 쓰는 환경(서명 없는 시뮬레이터 빌드 등)에서는 UserDefaults 에 둔다 — 실기기에서는 열쇠고리가 먼저다.
+    private static let creds: (id: String, sec: String) = {
+        func load(_ k: String, _ make: () -> String) -> String {
+            if let v = kcGet(k) { return v }
+            if let v = UserDefaults.standard.string(forKey: "kids.kc." + k) { return v }
+            let v = make()
+            if !kcSet(k, v) { UserDefaults.standard.set(v, forKey: "kids.kc." + k) }
+            return v
+        }
+        return (load("id") { "k" + rand(23) }, load("sec") { rand(40) })
+    }()
+    static var id: String { creds.id }
+    static var sec: String { creds.sec }
 
     private static let regLock = NSLock()
     private static var registered = UserDefaults.standard.bool(forKey: "kids.reg")
@@ -79,12 +91,16 @@ enum KidsServer {
         try? await call("POST", "/c/loc", ["la": la, "lo": lo, "acc": acc, "bt": bt, "ch": ch ? 1 : 0], timeout: 10)
     }
     /// 길동무 서버의 장면(날씨·친구들). 위치는 5km 칸으로 뭉개서 보낸다. 위치를 모르면 좌표를 아예 보내지 않는다.
-    static func scene(lat: Double?, lng: Double?) async -> String? {
+    static func scene(lat: Double?, lng: Double?) async -> (json: String?, err: String) {
         var o: [String: Any] = ["nowMs": Int64(Date().timeIntervalSince1970 * 1000), "tzOffsetMin": TimeZone.current.secondsFromGMT() / 60, "locked": false, "routeShown": false, "key": "kids", "here": 0, "boarded": false, "nodes": [Any]()]
         if let a = lat, let b = lng { o["lat"] = (a * 20).rounded() / 20; o["lng"] = (b * 20).rounded() / 20 }
-        guard let body = try? JSONSerialization.data(withJSONObject: o), let u = URL(string: Servers.base + "/scene") else { return nil }
+        guard let body = try? JSONSerialization.data(withJSONObject: o), let u = URL(string: Servers.base + "/scene") else { return (nil, "주소 오류") }
         var r = URLRequest(url: u, timeoutInterval: 8); r.httpMethod = "POST"; r.httpBody = body; r.setValue("application/json", forHTTPHeaderField: "content-type")
-        guard let (d, resp) = try? await URLSession.shared.data(for: r), (resp as? HTTPURLResponse)?.statusCode == 200 else { return nil }
-        return String(data: d, encoding: .utf8)
+        do {
+            let (d, resp) = try await URLSession.shared.data(for: r)
+            let st = (resp as? HTTPURLResponse)?.statusCode ?? 0
+            if st != 200 { return (nil, "장면 서버 \(st)") }
+            return (String(data: d, encoding: .utf8), "")
+        } catch { return (nil, error.localizedDescription) }
     }
 }

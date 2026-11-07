@@ -147,6 +147,7 @@ struct KidsHomeTab: View {
     @ObservedObject private var store = KidsStore.shared
     @ObservedObject private var d = SceneDriver.shared
     @State private var sceneJSON = ""
+    @State private var sceneErr = ""
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
@@ -159,6 +160,7 @@ struct KidsHomeTab: View {
                     Spacer()
                 }
                 scene(h: 220, r: 14)
+                if sceneJSON.isEmpty && !sceneErr.isEmpty { Text("장면을 못 받았어요 · \(sceneErr)").font(Typo.font(11)).foregroundColor(pal.color("sub")).frame(maxWidth: .infinity, alignment: .leading) }
                 Text("길동무 친구들이 오늘도 돌아다니고 있어요. 3초 꾹 누르면 친구들이 인사해요.").font(Typo.font(11)).foregroundColor(pal.color("sub")).frame(maxWidth: .infinity, alignment: .leading)
             }.padding(14)
         }
@@ -187,7 +189,8 @@ struct KidsHomeTab: View {
         while !Task.isCancelled {
             if n % 20 == 0 {
                 let l = KidsLocation.shared.last?.coordinate
-                if let s = await KidsServer.scene(lat: l?.latitude, lng: l?.longitude) { sceneJSON = s }
+                let r = await KidsServer.scene(lat: l?.latitude, lng: l?.longitude)
+                if let s = r.json { sceneJSON = s; sceneErr = "" } else { sceneErr = r.err }
             }
             await store.refreshState()
             n += 1
