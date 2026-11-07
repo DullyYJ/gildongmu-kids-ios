@@ -1,6 +1,6 @@
 # 길동무 키즈 iOS — HANDOFF
 
-최종 갱신: 2026-11-07 (Claude Sonnet 5.5, 인계 세션에서 시작)
+최종 갱신: 2026-11-07 (Claude Sonnet 5.5) — 첫 실행 확인 완료
 
 ## 0. 상시 규칙
 - 100% 최신 네이티브(SwiftUI · Core Haptics · CoreLocation · Keychain). WebView · 레거시 금지. 메인 스레드 부하 0, 무거운 일은 백그라운드.
@@ -28,9 +28,15 @@ Sources/Kids      서버 연결 · 화면 그리개 · 탭 화면 · 위치
 | KidsLocation | 동의 + 공유 켬일 때만 위치 보고. 주기: 평소 5분 · 서버 sl=8분 · 보는 중 w(1=2.5초, 2=10초, 3=15초). 항상 허용 + 백그라운드 위치 |
 
 ## 2. 현재 상태 (2026-11-07)
-- 작성 완료(첫 빌드 확인 전): 위 전부. 노선도 탭은 자리만 있다.
+- **빌드 · 시뮬레이터 실행 확인됨**(문법 검사 · 전체 빌드 통과, ios-ci-out 스크린샷 확인): 가족대화 · 퀘스트(서버 blocks 그대로 그림) · 홈(장면 · 연결 상태 · 별) · 설정(연결 비밀키 · 위치 공유 · 화면 색 · 약관 · 동의 철회) 모두 정상. 노선도 탭은 자리만 있다.
 - 동의 문구는 안드로이드 `Engine.consentScreen`(버전 2)과 같은 글이다. 동의 후 `/c/consent {v:2}` 를 서버에 알린다.
 - 연결 QR 글: `gildongmu-kids://pair?c=<아이디>&k=<비밀키>` (10분 유효).
+- 시험 실행(`-kidsDemo`)에서만 홈에 작은 '진단' 줄(SceneDriver.diag())이 보인다 — 장면이 안 그려질 때 laid/run/last 로 원인을 가르는 용도. 일반 실행에는 안 보인다.
+- 이번 세션에서 고친 함정(같은 실수 방지):
+  - Info.plist 를 `Build/` 에 두면 빌드 출력 폴더 `build/`(대소문자 무시 파일시스템)와 겹쳐 지워진다 → `Config/Info.plist`.
+  - 서명 없는 시뮬레이터 빌드에서는 Keychain 쓰기가 실패한다 → 아이디 · 비밀은 앱을 켠 뒤 한 번만 만들고, 실패하면 UserDefaults 에 둔다(실기기는 Keychain 우선). 요청마다 새로 만들면 서버가 "인증이 필요해요".
+  - 장면 JSON 이 화면보다 늦게 도착하면 SceneView 가 낡은 값으로 적용했다 → `onChange(of: json) { j in … }` 새 값 사용(부모 Scene/SceneView.swift 에서 고침).
+  - 공유 UI/Core 파일이 부모의 다른 폴더(Shared · Tabs)의 타입을 쓰면 키즈 typecheck 가 깨진다(예: Color(argb:) → KidsColor.swift 로 복제, Core/Rules.swift 는 vendor 제외).
 
 ## 3. 작업 방법 (맥 없이)
 - 빌드는 GitHub Actions(macos-latest). git push 가 막힌 세션에서는 GitHub 웹 업로드(`/upload/main/<폴더>`)로 올린다. 폴더마다 한 번씩.
@@ -40,7 +46,7 @@ Sources/Kids      서버 연결 · 화면 그리개 · 탭 화면 · 위치
 - CI 캡처는 실행할 때마다 새 기기로 키즈 서버에 등록한다(시험용 기기 행이 쌓인다 — 서버 쪽 정리 필요하면 안드로이드 저장소 ENGINE.md 참고).
 
 ## 4. 남은 일 (우선순위)
-1. 첫 빌드 · 캡처 확인, 컴파일 오류 수정.
+1. 남은 화면 캡처 점검(동의 · 지도 자리 · 다크).
 2. 키즈 홈의 다마고치 동작: 안드로이드는 `Engine.java` 가 기기 안에서 배고픔 · 응가 · 공부 · 잠을 계산해 장면(kbeg/kpoop …)에 싣는다. iOS 는 판단을 서버로 옮길지(권장: "앱은 그리기만") Engine 을 이식할지 결정 필요 → 일단 서버 /scene 장면만 그린다.
 3. 알림: APNs(안드로이드는 FCM). 부모 푸시 · 장소 알림 · 확인/출발 시트(`trip`/`prompt` 상태).
 4. 노선도 탭(부모 앱 MapTab 재사용), 꾸미기 팝업, 꾸미기 아이템.
