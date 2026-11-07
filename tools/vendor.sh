@@ -7,6 +7,7 @@ set -euo pipefail
 P="${1:-parent}"
 rm -rf Vendor && mkdir -p Vendor/Sources Vendor/Fonts
 cp -R "$P/Sources/Core" "$P/Sources/UI" "$P/Sources/Scene" Vendor/Sources/
+rm -f Vendor/Sources/Core/Rules.swift            # 커뮤니티 글 규칙 검사(부모 앱 Tabs 의 Json 에 기댄다) — 키즈는 안 쓴다
 rm -f Vendor/Sources/UI/RootView.swift            # 부모 앱의 탭 묶음(Tabs/Ride 에 기대는 곳) — 키즈는 자기 KidsRoot 를 쓴다
 cp -R "$P/Resources/chars3d" Vendor/chars3d
 cp "$P/Resources/open.json" Vendor/open.json
